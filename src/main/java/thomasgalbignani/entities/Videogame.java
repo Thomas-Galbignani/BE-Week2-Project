@@ -7,7 +7,7 @@ public class Videogame extends Gioco {
     Genere genere;
 
 
-    public Videogame(String id, String title, double uscita, double price, Piattaforma platform, int duration, Genere genere) {
+    public Videogame(String id, String title, String uscita, double price, Piattaforma platform, int duration, Genere genere) {
         super(id, title, uscita, price);
         this.platform = platform;
         this.duration = duration;

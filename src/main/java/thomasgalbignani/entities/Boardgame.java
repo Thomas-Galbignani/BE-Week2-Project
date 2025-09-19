@@ -6,7 +6,7 @@ public class Boardgame extends Gioco {
     int duration;
 
 
-    public Boardgame(String id, String title, double uscita, double price, int players, int duration) {
+    public Boardgame(String id, String title, String uscita, double price, int players, int duration) {
         super(id, title, uscita, price);
         this.players = players;
         this.duration = duration;

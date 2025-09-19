@@ -4,10 +4,10 @@ public abstract class Gioco {
     public static Gioco getPrice;
     protected String title;
     String id;
-    double uscita;
+    String uscita;
     double price;
 
-    public Gioco(String id, String title, double uscita, double price) {
+    public Gioco(String id, String title, String uscita, double price) {
         this.id = id;
         this.title = title;
         this.uscita = uscita;
@@ -30,11 +30,11 @@ public abstract class Gioco {
         this.title = title;
     }
 
-    public double getUscita() {
+    public String getUscita() {
         return uscita;
     }
 
-    public void setUscita(double uscita) {
+    public void setUscita(String uscita) {
         this.uscita = uscita;
     }
 
