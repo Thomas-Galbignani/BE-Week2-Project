@@ -9,7 +9,6 @@ public class Collezione {
 
 
     HashMap<String, Gioco> collection = new HashMap<>();
-    int numeroDiGiochiTotali = collection.size();
     double prezzoPiùAlto = Double.MAX_VALUE;
 
     public void add(Videogame game) {
@@ -77,7 +76,7 @@ public class Collezione {
     }
 
     public void getStatistics() {
-        System.out.println("il numero totale di videogiochi è : " + numeroDiGiochiTotali +
+        System.out.println("il numero totale di videogiochi è : " + collection.size() +
                 " " + "la media di tutti i prezzi dei giochi è:" + getMediaDeiPrezzi());
     }
 
