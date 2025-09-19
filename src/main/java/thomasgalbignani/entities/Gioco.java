@@ -3,9 +3,9 @@ package thomasgalbignani.entities;
 public abstract class Gioco {
     public static Gioco getPrice;
     protected String title;
-    String id;
-    String uscita;
-    double price;
+    protected String id;
+    protected String uscita;
+    protected double price;
 
     public Gioco(String id, String title, String uscita, double price) {
         this.id = id;
@@ -49,9 +49,9 @@ public abstract class Gioco {
     @Override
     public String toString() {
         return "Gioco{" +
-                "id='" + id + '\'' +
-                ", title='" + title + '\'' +
-                ", uscita=" + uscita +
+                "title='" + title + '\'' +
+                ", id='" + id + '\'' +
+                ", uscita='" + uscita + '\'' +
                 ", price=" + price +
                 '}';
     }
